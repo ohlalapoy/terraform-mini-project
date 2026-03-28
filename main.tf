@@ -70,7 +70,7 @@ resource "aws_security_group" "allow_web" {
     cidr_blocks      = ["0.0.0.0/0"]
 
   }
-
+#inbound 
   ingress {
     description      = "SSH"
     from_port        = 22
@@ -88,7 +88,7 @@ resource "aws_security_group" "allow_web" {
     cidr_blocks      = ["0.0.0.0/0"]
 
   } 
-
+# Outbound
   egress {
     from_port        = 0
     to_port          = 0
