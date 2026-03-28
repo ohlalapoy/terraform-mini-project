@@ -92,7 +92,7 @@ resource "aws_security_group" "allow_web" {
   egress {
     from_port        = 0
     to_port          = 0
-    protocol         = "-1"
+    protocol         = "-1" #allow network protocol
     cidr_blocks      = ["0.0.0.0/0"]
   }
 
